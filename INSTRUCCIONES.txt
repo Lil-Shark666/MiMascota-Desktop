@@ -1,0 +1,44 @@
+MIMASCOTA DESKTOP - INSTRUCCIONES DE EJECUCION
+
+1. DESCOMPRIME EL ARCHIVO ZIP.
+2. ABRE POWERSHELL DENTRO DE LA CARPETA MiMascota_Desktop.
+3. SI ES LA PRIMERA EJECUCION, EJECUTA:
+
+   python -m venv .venv
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   .\.venv\Scripts\Activate.ps1
+   python -m pip install -r requirements.txt
+   Copy-Item .env.example .env
+
+4. INICIA LA APLICACION:
+
+   python main.py
+
+TAMBIEN PUEDES UTILIZAR INICIAR_MIMASCOTA.bat DESPUES DE INSTALAR
+LAS DEPENDENCIAS.
+
+PARA VOLVER A EJECUTARLA EN OTRA SESION DE POWERSHELL:
+
+   .\.venv\Scripts\Activate.ps1
+   python main.py
+
+SI POWERSHELL BLOQUEA ACTIVATE.PS1, EJECUTA ANTES EN ESA MISMA VENTANA:
+
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+MODO DEMOSTRACION:
+- La aplicacion inicia con MIMASCOTA_DEMO_MODE=true.
+- Utiliza datos ficticios guardados localmente en mimascota/data/demo_data.json.
+- No introduzcas datos reales de propietarios o pacientes en este modo.
+
+INTEGRACION:
+- El frontend consume una API REST.
+- No se conecta directamente a MySQL.
+- Consulta docs/CONTRATO_API_PARA_BACKEND.md para conocer las rutas esperadas.
+- La conexion real depende de que el backend del equipo implemente el contrato y
+  esté disponible por una URL accesible desde tu computador.
+
+ATAJOS:
+- Ctrl + F: enfocar la búsqueda de la sección abierta.
+- Ctrl + N: crear un registro en la sección actual.
+- F5: actualizar la vista actual.

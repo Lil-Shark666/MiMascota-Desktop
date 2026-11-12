@@ -1,0 +1,288 @@
+{
+  "owners": [
+    {
+      "id": 1,
+      "full_name": "Laura Méndez",
+      "document_type": "CC",
+      "document_number": "1061700234",
+      "phone": "300 456 7812",
+      "email": "laura.mendez@email.com",
+      "address": "Centro",
+      "active": true
+    },
+    {
+      "id": 2,
+      "full_name": "Andrés Salazar",
+      "document_type": "CC",
+      "document_number": "1012456789",
+      "phone": "310 555 1940",
+      "email": "andres.salazar@email.com",
+      "address": "La Esmeralda",
+      "active": true
+    },
+    {
+      "id": 3,
+      "full_name": "Camila Rojas",
+      "document_type": "CC",
+      "document_number": "1058901234",
+      "phone": "315 802 1144",
+      "email": "camila.rojas@email.com",
+      "address": "Campamento",
+      "active": true
+    },
+    {
+      "id": 4,
+      "full_name": "Julián Torres",
+      "document_type": "CC",
+      "document_number": "1034567890",
+      "phone": "312 444 2010",
+      "email": "julian.torres@email.com",
+      "address": "El Recuerdo",
+      "active": true
+    },
+    {
+      "id": 5,
+      "full_name": "Valentina Muñoz",
+      "document_type": "CC",
+      "document_number": "1061700991",
+      "phone": "300 701 8877",
+      "email": "valentina.m@email.com",
+      "address": "Modelo",
+      "active": true
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "name": "Luna",
+      "owner_id": 1,
+      "species": "Perro",
+      "breed": "Golden Retriever",
+      "birth_date": "2021-04-12",
+      "sex": "Hembra",
+      "status": "Activa",
+      "active": true,
+      "notes": "Al día con controles"
+    },
+    {
+      "id": 2,
+      "name": "Milo",
+      "owner_id": 2,
+      "species": "Gato",
+      "breed": "Criollo",
+      "birth_date": "2022-09-03",
+      "sex": "Macho",
+      "status": "Activa",
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "owner_id": 3,
+      "species": "Perro",
+      "breed": "Labrador",
+      "birth_date": "2019-01-22",
+      "sex": "Macho",
+      "status": "Activa",
+      "active": true,
+      "notes": "Control de peso"
+    },
+    {
+      "id": 4,
+      "name": "Nala",
+      "owner_id": 1,
+      "species": "Gato",
+      "breed": "Siamés",
+      "birth_date": "2023-06-15",
+      "sex": "Hembra",
+      "status": "Activa",
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "name": "Rocky",
+      "owner_id": 4,
+      "species": "Perro",
+      "breed": "Bulldog francés",
+      "birth_date": "2020-11-08",
+      "sex": "Macho",
+      "status": "Activa",
+      "active": true,
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "name": "Mora",
+      "owner_id": 5,
+      "species": "Conejo",
+      "breed": "Mini Lop",
+      "birth_date": "2024-02-20",
+      "sex": "Hembra",
+      "status": "Activa",
+      "active": true,
+      "notes": ""
+    }
+  ],
+  "vets": [
+    {
+      "id": 1,
+      "full_name": "Dra. María Fernanda Ruiz",
+      "license_number": "TP-45871",
+      "specialty": "Medicina general",
+      "phone": "310 555 0101",
+      "email": "m.ruiz@vet.com",
+      "active": true
+    },
+    {
+      "id": 2,
+      "full_name": "Dr. Santiago López",
+      "license_number": "TP-39210",
+      "specialty": "Dermatología",
+      "phone": "310 555 0102",
+      "email": "s.lopez@vet.com",
+      "active": true
+    },
+    {
+      "id": 3,
+      "full_name": "Dra. Paula Castillo",
+      "license_number": "TP-51720",
+      "specialty": "Cirugía",
+      "phone": "310 555 0103",
+      "email": "p.castillo@vet.com",
+      "active": true
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Consulta general",
+      "description": "Valoración clínica general",
+      "price": 65000,
+      "duration_minutes": 30,
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Vacunación",
+      "description": "Aplicación y registro de vacuna",
+      "price": 45000,
+      "duration_minutes": 20,
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Control dermatológico",
+      "description": "Evaluación de piel y pelaje",
+      "price": 85000,
+      "duration_minutes": 40,
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Profilaxis",
+      "description": "Limpieza dental veterinaria",
+      "price": 180000,
+      "duration_minutes": 60,
+      "active": true
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "vet_id": 1,
+      "service_id": 1,
+      "appointment_date": "2026-11-11",
+      "appointment_time": "09:30",
+      "status": "Confirmada",
+      "notes": "Revisión general"
+    },
+    {
+      "id": 2,
+      "pet_id": 2,
+      "vet_id": 2,
+      "service_id": 3,
+      "appointment_date": "2026-11-11",
+      "appointment_time": "11:00",
+      "status": "Programada",
+      "notes": "Irritación en la piel"
+    },
+    {
+      "id": 3,
+      "pet_id": 3,
+      "vet_id": 1,
+      "service_id": 1,
+      "appointment_date": "2026-11-12",
+      "appointment_time": "10:00",
+      "status": "Confirmada",
+      "notes": "Control de peso"
+    },
+    {
+      "id": 4,
+      "pet_id": 4,
+      "vet_id": 3,
+      "service_id": 2,
+      "appointment_date": "2026-11-13",
+      "appointment_time": "14:00",
+      "status": "Programada",
+      "notes": "Refuerzo anual"
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "appointment_id": 90,
+      "pet_id": 3,
+      "vet_id": 1,
+      "created_at": "2026-11-04",
+      "diagnosis": "Condición corporal por encima del ideal",
+      "treatment": "Ajuste de alimentación y actividad",
+      "weight_kg": 28.4,
+      "medications": "No aplica",
+      "notes": "Control en 30 días"
+    },
+    {
+      "id": 2,
+      "appointment_id": 91,
+      "pet_id": 1,
+      "vet_id": 1,
+      "created_at": "2026-10-27",
+      "diagnosis": "Examen general sin hallazgos relevantes",
+      "treatment": "Continuar controles preventivos",
+      "weight_kg": 24.1,
+      "medications": "No aplica",
+      "notes": "Paciente estable"
+    }
+  ],
+  "vaccines": [
+    {
+      "id": 1,
+      "pet_id": 1,
+      "vaccine_name": "Rabia",
+      "administered_date": "2025-12-16",
+      "next_dose_date": "2026-11-26",
+      "batch_number": "RB-2401",
+      "notes": "Dosis anual"
+    },
+    {
+      "id": 2,
+      "pet_id": 2,
+      "vaccine_name": "Triple felina",
+      "administered_date": "2025-11-16",
+      "next_dose_date": "2026-11-07",
+      "batch_number": "TF-1180",
+      "notes": "Pendiente de refuerzo"
+    },
+    {
+      "id": 3,
+      "pet_id": 3,
+      "vaccine_name": "Polivalente",
+      "administered_date": "2026-07-14",
+      "next_dose_date": "2027-07-14",
+      "batch_number": "PV-9920",
+      "notes": ""
+    }
+  ]
+}
